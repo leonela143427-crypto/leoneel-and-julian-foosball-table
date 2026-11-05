@@ -49,6 +49,7 @@ basic.forever(function () {
     if (hummingbird.getSensor(SensorType.Distance, ThreePort.Two) > 30) {
         hummingbird.setLED(ThreePort.Two, 100)
         hummingbird.setLED(ThreePort.One, 0)
+        hummingbird.setPositionServo(FourPort.Three, 0)
     } else if (hummingbird.getSensor(SensorType.Distance, ThreePort.Two) < 30) {
         hummingbird.setLED(ThreePort.One, 100)
         hummingbird.setLED(ThreePort.Two, 0)
