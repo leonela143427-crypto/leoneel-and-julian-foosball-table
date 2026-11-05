@@ -53,5 +53,6 @@ basic.forever(function () {
         hummingbird.setLED(ThreePort.One, 100)
         hummingbird.setLED(ThreePort.Two, 0)
         basic.pause(1000)
+        hummingbird.setPositionServo(FourPort.Three, 90)
     }
 })
